@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .img_party{
+            width: 100%;
+            height: 200px;
+            background-color:rgba(169, 169, 169, 0.227);
+            background-size: contain;
+            background-repeat: no-repeat;
+           background-position: center;
+        }
+        #party_details{
+            display: none;
+        }
+        
+    </style>
+</head>
+
+<body class="">
+    <div class="container">
+        
+        <div class="text-center my-5 ">
+            <h1>Bootstrap 5 - Festa</h1>
+            <hr>
+            <div class="btn btn-outline-primary rouded col-4 mt-3" id="create_party_button">
+                Criar Festa
+            </div>
+        </div>
+        <div class="row" id="parties_container"><h2 class="text-center">Carregando...</h2></div> 
+     <!------------------------------------     Criar Festa      ------------------------------------------->
+        <div class="row " >
+            <form class="col-lg-9 col-sm-12 row g-3 mx-auto mb-5" id="party_form" style="display: none;">
+                <h3 class="text-center display-5" >Criar Festa</h3>
+                <div class="col-md-6">
+                    <input type="text" id="title_party_form" class="form-control" placeholder="Título" required>
+                </div><!--titulo-->
+                <div class="col-md-6">
+                    <input type="text" id="author_party_form" class="form-control" placeholder="Autor" required>
+                </div><!--autor-->
+                <div class="col-md-6">
+                    <input type="number" id="budget_party_form" class="form-control" placeholder="Orçamento" required>
+                </div><!--orçamento-->
+                <div class="col-md-6">
+                    <input type="text" id="image_party_form" class="form-control" placeholder="Imagem (url)" required>
+                </div><!--imagem-->
+                <div class="col-12">
+                    <textarea class="form-control" id="description_party_form" placeholder="Descrição" required></textarea>
+                </div><!--descriçao-->
+                <p class="text-center">Escolha os serviços:</p>
+
+                <div class="row col-12 g-3 " id="services_form"></div><!--servicos-->
+
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary col-12" >
+                </div><!--submit-->
+            </form>
+        </div>
+        <!--form-->
+
+        <div class="row position-absolute top-0 start-0 w-100 h-100 bg-white p-5 justify-content-md-center " id="party_details">
+        </div><!--fds-->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
