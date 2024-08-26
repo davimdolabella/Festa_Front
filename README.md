@@ -1,2 +1,4 @@
 # Festa_Front
-Projeto que usa bootstrap, e js para conectar com a api de outro repositorio meu.
+Aprendendo requisições e bootstrap.
+### Para testar [clique aqui]() ⬅️.
+### Para acessar a API utilizada nesse site [clique aqui]() ⬅️
